@@ -10,7 +10,7 @@ using group_v1.Data;
 namespace group_v1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231210232818_InitialCreate")]
+    [Migration("20231210235205_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,6 +34,23 @@ namespace group_v1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Groups");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Runners"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Hunters"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Explorers"
+                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -31,6 +31,23 @@ namespace group_v1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Groups");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Runners"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Hunters"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Explorers"
+                        });
                 });
 #pragma warning restore 612, 618
         }
