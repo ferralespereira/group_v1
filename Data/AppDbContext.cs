@@ -7,7 +7,27 @@ namespace group_v1.Data
     {
         public DbSet<Group> Groups { get; set; }
 
-
+        // seeding dataBase
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Group>().HasData(
+                new Group
+                {
+                    Id = 1,
+                    Name = "Runners",
+                },
+                new Group
+                {
+                    Id = 2,
+                    Name = "Hunters",
+                },
+                new Group
+                {
+                    Id = 3,
+                    Name = "Explorers",
+                }
+            );
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
