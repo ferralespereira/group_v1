@@ -10,7 +10,7 @@ using group_v1.Data;
 namespace group_v1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231210235205_InitialCreate")]
+    [Migration("20231211000642_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

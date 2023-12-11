@@ -35,7 +35,7 @@ namespace group_v1.Data
             var connectionString = "server=localhost;user=root;password=root;database=group_v1";
             
             // Update your MySql version here "new Version(*, *, *)"
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 34));
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 35));
             optionsBuilder.UseMySql(connectionString, serverVersion);
         }
     }
