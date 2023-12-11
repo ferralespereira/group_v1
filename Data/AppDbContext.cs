@@ -24,7 +24,7 @@ namespace group_v1.Data
                 new Group
                 {
                     Id = 3,
-                    Name = "Explorers",
+                    Name = "Walkers",
                 }
             );
         }

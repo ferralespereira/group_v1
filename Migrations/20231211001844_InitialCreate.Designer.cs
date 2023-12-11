@@ -10,7 +10,7 @@ using group_v1.Data;
 namespace group_v1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231211000642_InitialCreate")]
+    [Migration("20231211001844_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -49,7 +49,7 @@ namespace group_v1.Migrations
                         new
                         {
                             Id = 3,
-                            Name = "Explorers"
+                            Name = "Walkers"
                         });
                 });
 #pragma warning restore 612, 618

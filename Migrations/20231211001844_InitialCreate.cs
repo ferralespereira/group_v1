@@ -38,7 +38,7 @@ namespace group_v1.Migrations
                 {
                     { 1, "Runners" },
                     { 2, "Hunters" },
-                    { 3, "Explorers" }
+                    { 3, "Walkers" }
                 });
         }
 

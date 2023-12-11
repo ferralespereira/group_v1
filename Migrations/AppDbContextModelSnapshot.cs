@@ -46,7 +46,7 @@ namespace group_v1.Migrations
                         new
                         {
                             Id = 3,
-                            Name = "Explorers"
+                            Name = "Walkers"
                         });
                 });
 #pragma warning restore 612, 618
